@@ -3,48 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PardusAI</title>
+<title>PARDUS AI</title>
 
 <style>
 body{
   margin:0;
-  font-family:Arial, sans-serif;
-  background:#0b1120;
+  padding:0;
+  background:#020617; /* sitenin ana rengi */
   color:white;
+  font-family:Arial;
+  text-align:center;
 }
 
-/* Demo site içerik */
-header{
+h1{
+  margin-top:20px;
+}
+
+/* iframe */
+iframe{
+  width:100%;
+  height:100vh;
+  border:none;
+}
+
+/* ===== ULTRA SANSÜR KUTUSU ===== */
+#reklamSansur{
+  position:fixed;
+  bottom:0;
+  right:0;
+
+  width:260px;   /* küçük */
+  height:140px;  /* küçük */
+
+  background:#020617; /* site ile aynı renk */
+  z-index:9999999999999;
+
+  border-top-left-radius:18px;
+  box-shadow:0 0 40px #020617;
+}
+
+/* ekstra karartma */
+#reklamSansur::after{
+  content:"";
+  position:absolute;
+  inset:0;
   background:#020617;
-  padding:20px;
-  text-align:center;
-  font-size:28px;
-  color:#38bdf8;
+  filter:blur(6px);
 }
+</style>
+</head>
 
-section{
-  padding:40px;
-  text-align:center;
-  opacity:0.8;
-}
+<body>
 
-/* Sağ alt mini AI kutu */
-#ai-box {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  background: #020617;
-  color: #38bdf8;
-  padding: 8px 14px;
-  border-radius: 10px;
-  font-size: 13px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.4);
-  opacity: 0.85;
-  transition: 0.3s;
-  z-index: 9999;
-  cursor:pointer;
-}
+<h1>PARDUS AI</h1>
 
-/* hover efe…
+<iframe src="https://pardus-ai-ba25cc06.base44.app"></iframe>
+
+<!-- ULTRA SANSÜR -->
+<div id="reklamSansur"></div>
+
+</body>
+</html>
+
 
 
