@@ -13,11 +13,12 @@ box-sizing:border-box;
 }
 
 body{
-background:#0b1120;
+background:#08080F;
 font-family:Arial, sans-serif;
 overflow:hidden;
 }
 
+/* site iframe */
 iframe{
 position:fixed;
 top:0;
@@ -25,6 +26,19 @@ left:0;
 width:100%;
 height:100%;
 border:none;
+z-index:1;
+}
+
+/* SAĞ ALT REKLAM SANSÜR KUTUSU */
+.reklam-kapat{
+position:fixed;
+bottom:18px;
+right:18px;
+width:260px;
+height:120px;
+background:#08080F;
+border-radius:12px;
+z-index:999999;
 }
 </style>
 </head>
@@ -33,9 +47,11 @@ border:none;
 
 <iframe src="https://pardus-ai-ba25cc06.base44.app"></iframe>
 
+<!-- SAĞ ALT KAPATMA -->
+<div class="reklam-kapat"></div>
+
 </body>
 </html>
-
 
 
 
