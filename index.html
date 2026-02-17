@@ -9,61 +9,54 @@
 body{
   margin:0;
   padding:0;
-  background:#020617; /* sitenin ana rengi */
-  color:white;
+  background:#0b1120;
   font-family:Arial;
-  text-align:center;
+  overflow:hidden;
 }
 
-h1{
-  margin-top:20px;
-}
-
-/* iframe */
 iframe{
   width:100%;
   height:100vh;
   border:none;
 }
 
-/* ===== ULTRA SANSÜR KUTUSU ===== */
-#reklamSansur{
+/* ===== ULTRA TEKNOFEST SANSÜR ===== */
+#killAd{
   position:fixed;
   bottom:0;
   right:0;
+  width:420px;   /* büyüttük */
+  height:260px;
+  background:#0b1120;  /* sitenin rengi */
+  z-index:99999999999999;
 
-  width:260px;   /* küçük */
-  height:140px;  /* küçük */
-
-  background:#020617; /* site ile aynı renk */
-  z-index:9999999999999;
-
-  border-top-left-radius:18px;
-  box-shadow:0 0 40px #020617;
+  /* ekstra yok etme */
+  box-shadow:0 0 120px #0b1120;
 }
 
-/* ekstra karartma */
-#reklamSansur::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:#020617;
-  filter:blur(6px);
+/* ekstra güvenlik */
+#killAd2{
+  position:fixed;
+  bottom:0;
+  right:0;
+  width:600px;
+  height:350px;
+  background:#0b1120;
+  opacity:0.95;
+  z-index:99999999999998;
 }
 </style>
 </head>
 
 <body>
 
-<h1>PARDUS AI</h1>
-
 <iframe src="https://pardus-ai-ba25cc06.base44.app"></iframe>
 
-<!-- ULTRA SANSÜR -->
-<div id="reklamSansur"></div>
+<!-- ÇİFT KAT SANSÜR -->
+<div id="killAd2"></div>
+<div id="killAd"></div>
 
 </body>
 </html>
-
 
 
