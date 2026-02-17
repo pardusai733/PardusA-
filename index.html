@@ -1,60 +1,65 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PARDUS AI</title>
+  <title>Pardus AI</title>
+  <meta charset="UTF-8">
 
-<style>
-body{
-  margin:0;
-  padding:0;
-  background:#0b1120;
-  font-family:Arial;
-  overflow:hidden;
-}
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      background:#0b1120; /* sitenin gerçek arka plan tonu */
+      color:white;
+      font-family:Arial;
+      text-align:center;
+      overflow:hidden;
+    }
 
-iframe{
-  width:100%;
-  height:100vh;
-  border:none;
-}
+    h1{
+      margin-top:20px;
+    }
 
-/* ===== ULTRA TEKNOFEST SANSÜR ===== */
-#killAd{
-  position:fixed;
-  bottom:0;
-  right:0;
-  width:420px;   /* büyüttük */
-  height:260px;
-  background:#0b1120;  /* sitenin rengi */
-  z-index:99999999999999;
+    iframe{
+      width:100%;
+      height:95vh;
+      border:none;
+    }
 
-  /* ekstra yok etme */
-  box-shadow:0 0 120px #0b1120;
-}
+    /* 🔥 ULTRA GİZLİ SANSÜR (kutusuz) */
+    body::after{
+      content:"";
+      position:fixed;
+      bottom:0;
+      right:0;
+      width:800px;   /* alanı komple kapatır */
+      height:420px;
+      background:#0b1120;
+      z-index:9999999999;
+      pointer-events:none;
+    }
 
-/* ekstra güvenlik */
-#killAd2{
-  position:fixed;
-  bottom:0;
-  right:0;
-  width:600px;
-  height:350px;
-  background:#0b1120;
-  opacity:0.95;
-  z-index:99999999999998;
-}
-</style>
+    /* blur kamuflaj (pro görünüm) */
+    body::before{
+      content:"";
+      position:fixed;
+      bottom:0;
+      right:0;
+      width:800px;
+      height:420px;
+      backdrop-filter:blur(12px);
+      background:#0b1120;
+      opacity:0.98;
+      z-index:9999999998;
+      pointer-events:none;
+    }
+  </style>
 </head>
 
 <body>
 
-<iframe src="https://pardus-ai-ba25cc06.base44.app"></iframe>
+<h1>PARDUS AI</h1>
 
-<!-- ÇİFT KAT SANSÜR -->
-<div id="killAd2"></div>
-<div id="killAd"></div>
+<iframe src="https://pardus-ai-ba25cc06.base44.app"></iframe>
 
 </body>
 </html>
